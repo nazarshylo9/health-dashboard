@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes flash-yellow {
+  0% { background-color: #fef08a; transform: scale(1.1); color: #854d0e; }
+  100% { background-color: transparent; transform: scale(1); color: inherit; }
+}
+.animate-live-update {
+  animation: flash-yellow 1s ease-out;
+}
